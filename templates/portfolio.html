@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+         <div class="sidebar">
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                <h2>Atuegbe God'stime Ehischioya</h2>
+            </div>
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}">About Me</a>
+                    <a href="{{ url_for('what_i_do') }}">What I Do</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="{{ url_for('portfolio') }}" class="active">Portfolio</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya</p>
+            </footer>
+         </div>
+         <section id="portfolio">
+            <h2>My Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="static/images/project1.jpg" alt="Project1">
+                    <div class="project-summary">
+                        <h3>Obstacle Avoidance Robotic Car</h3>
+                        <p>An Obstacle avoidance robotic car is an autonomous vehicle designed to detect and avoid obstacles in its path using sensors like Ultrasonic.
+                            it employs algorithms to process sensor data and adjust its movement, ensuring smooth navigation without collisions.
+                            I carried out this project with my team during my 500Level second semester while in University. You can contact me for the schematic diagram and code.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="static/images/project2.jpg" alt="Project 2">
+                    <div class="project-summary">
+                        <h3>Automated Electric fish dryer with Solar input as backup</h3>
+                        <p>An Automated electric fish dryer is a system designed to efficiently dry fish using electric heating elements, with a solar input as a backup energy source. 
+                            it incorporates automation features such as temperature and timer controls to optimize drying conditions, ensuringconsistent results. This project offers a sustainable and reliable solution
+                            for fish preservation, especially in areas with limited electricity.<br> Using my school environ as a case study this project was to help and uplift the local fishermen and women in the rural communities
+                            to preserve their fish produce and enable them protect the eco-system from carbon pollution.<br> This Project was carried out by myself and my team which include: Divine Teryanger Akyigh and Ojo Andrew Oghenefejiro.
+                            <br> This project won two awards as best innovative project during ICEPT2024 and STEW2024 by the NIEEE body.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+         </section>
+    </div>
+</body>
+</html>

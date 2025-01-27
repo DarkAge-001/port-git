@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+         <div class="sidebar">
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                <h2>Atuegbe God'stime Ehischioya</h2>
+            </div>
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}">About Me</a>
+                    <a href="{{ url_for('what_i_do') }}">What I Do</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="{{ url_for('portfolio') }}">Portfolio</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya</p>
+            </footer>
+         </div>
+         <div class="home-container">
+            <h2>Welcome</h2>
+            <h1 class="animated-title">I'm Atuegbe God'stime Ehischioya</h1>
+            <p class="p-home">based in Port-Harcourt, Rivers state Nigeria.</p>
+            <a href="{{ url_for('contact') }}" class="styled-button">Hire Me</a>
+        </div>
+    </div>
+</body>
+</html>

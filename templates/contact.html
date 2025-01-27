@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+         <div class="sidebar">
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                <h2>Atuegbe God'stime Ehischioya</h2>
+            </div>
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}">About Me</a>
+                    <a href="{{ url_for('what_i_do') }}">What I Do</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="{{ url_for('portfolio') }}">Portfolio</a>
+                    <a href="{{ url_for('contact') }}" class="active">Contact</a>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya</p>
+            </footer>
+         </div>
+         <section id="contact">
+            <div class="contact-container">
+                <h2>Get in Touch</h2>
+                <form action="https://formspree.io/f/meoeoojy" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Tell us more about your needs..." required></textarea>
+                    <button type="submit">Send Messages</button>
+                </form>
+
+                <div class="contact-address">
+                    <strong>ADDRESS</strong>
+                    <p>12 Wilbros Estate,</p>
+                    <p>Tipper Garage, Chokocho.</p>
+                    <p>Etche L.G.A, Rivers State.</p>
+                </div>
+
+                <div class="number">
+                    <p>+234 810 631 3407</p>
+                    <p>godstimeatuegbe48@gmail.com</p>
+                </div>
+
+                <div class="social-media">
+                    <p><strong>FOLLOW ME</strong></p>
+                    <a href="https://x.com/official_age01?s=21" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/official_age1?igsh=aXdidjk3aDU3Y3ow&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/god%E2%80%99stime-atuegbe-a026ab2b9" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/DarkAge-001" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/2348106313407" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya. All Rights Reserved.</p>
+                <p>Terms & Policy | Disclaimer</p>
+            </footer>
+         </section>
+         
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+         <div class="sidebar">
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                <h2>Atuegbe God'stime Ehischioya</h2>
+            </div>
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}" class="active">About Me</a>
+                    <a href="{{ url_for('what_i_do') }}">What I Do</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="{{ url_for('portfolio') }}">Portfolio</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya</p>
+            </footer>
+         </div>
+         <div class="about-container">
+            <h1>Know me More</h1>
+            <p class="about-description">
+                I am an electrical engineer with a specialization in instrumentation and control, passionate about creating innovative solutions in automation, smart technologies, and renewable energy. 
+                My technical expertise spans Python programming, Flask, HTML, CSS, and instrumentation tools like MATLAB and PLC programming, which I leverage to design and implement user-focused systems.
+                I earned recognition as the first-place winner at ICEPT 2024 for presenting an automated electric fish dryer with solar input backup, a project combining engineering principles with sustainable innovation.
+                My work reflects my commitment to solving real-world problems through creative and efficient solutions.
+                As I continue to explore advanced Python frameworks, AI-driven technologies, and IoT systems, my goal is to contribute to transformative projects in energy, automation, and smart systems. 
+                Whether collaborating with teams or leading initiatives, I am driven to deliver impactful results that bridge technology and practical applications.
+            </p>
+
+            <!-- Section for Awards and Certificationns -->
+            <div class="awards-section">
+                <h2>Awards and Certifications</h2>
+                <!-- Award List -->
+                <ul class="awards-list">
+                    <li onclick="showCertificate('certificate1')">
+                        <i class="fas fa-trophy"></i>
+                        <strong>First place and Best Innovative Project - ICEPT 2024</strong>
+                        <p>Awarded by Nigerian Institute of Electrical and Electronics Engineers (NIEEE) on its 40th Annual conference
+                            during the 20th International Conference and Exhibition on Power and Telecommunications (ICEPT) held in Abuja 2024.<br> 
+                            Recognized for my pitch project: "Automated Electric fish dryer with solar input as backup".
+                        </p>
+                        <a href="{{ url_for('static', filename='images/certificate1.jpg') }}" target="_blank">View certificate</a>
+                    </li>
+                    <li onclick="showCertificate('certificate2')">
+                        <i class="fas fa-trophy"></i>
+                        <strong>Best Innovative project - STEW 2024</strong>
+                        <p>Received this Certificate from Nigerian Institute of Electrical and Electronics Engineers (NIEEE) Warri chapter 
+                            during the "Science, Technology, and Engineering Week" (STEW) 2024 held in Warri, Delta State, Nigeria.<br>Recognized for my pitch project:
+                            "Automated solar powered electric fish dryer"
+                        </p>
+                        <a href="{{ url_for('static', filename='images/certificate2.jpg') }}" target="_blank">View certificate</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section for move to Resume -->
+            <div class="cv-section">
+                <h2>View my Resume</h2>
+                <a href="{{ url_for('resume') }}" class="download-button">View</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

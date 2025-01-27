@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}">About Me</a>
+                    <a href="{{ url_for('what_i_do') }}">What I Do</a>
+                    <a href="{{ url_for('resume') }}" class="active">Resume</a>
+                    <a href="{{ url_for('portfolio') }}">Portfolio</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya</p>
+            </footer>
+         </div>
+         <div class="resume-header">
+            <div class="profile-picture">
+                <img src="static/images/profile.jpg" alt="Your Name">
+            </div>
+            <div class="profile-details">
+                <p><strong>Name:</strong> Atuegbe God'stime Ehischioya </p>
+                <p><strong>Email:</strong> godstimeatuegbe48@gmail.com</p>
+                <p><strong>Age:</strong> 23</p>
+                <p><strong>From:</strong> Amedokhian, Esan North-East LGA, Uromi, Edo State.</p>
+                <p><strong>Experience:</strong> +1.5 years</p>
+            </div>
+            <div class="education">
+                <h2>My Education</h2>
+                <ul class="education-list">
+                    <li>
+                        <div class="date">2012</div>
+                        <strong>Delightsome Pearl Nursery and primary school</strong>
+                        <p><strong>Eneka, Port-Harcourt, Rivers State, Nigeria</strong></p>
+                        <p>First school leaving Certificate (F.S.L.C)</p>
+                    </li>
+                    <li>
+                        <div class="date">2013 - 2016</div>
+                        <strong>Ritch Model Nursery, Primary and Secondary School</strong>
+                        <p><strong>Eneka, Port-Harcourt, Rivers State, Nigeria</strong></p>
+                        <p>Junior West Africa Senior Secondary School Certificate (Junior WASSCE)</p>
+                    </li>
+                    <li>
+                        <div class="date">2016 - 2019</div>
+                        <strong>Ritch Model Nursery, Primary and Secondary School</strong>
+                        <p><strong>Eneka, Port-Harcourt, Rivers State, Nigeria</strong></p>
+                        <p>Senior West Africa Senior Secondary School Certificate (Senior WASSCE)</p>
+                    </li>
+                    <li>
+                        <div class="date">2019 - 2024</div>
+                        <strong>Nigeria Maritime University</strong>
+                        <p><strong>Okerenkoko, Delta State, Nigeria</strong></p>
+                        <p>Bachelor of Engineering (B.Eng) - Electrical/Electronics Engineering<br>
+                            <strong>Major:</strong> Instrumentation and control Engineering<br>
+                            <strong>CGPA:</strong> 4.34/5.0 (Second class Upper division)
+                        </p>
+                    </li>
+                </ul>
+                 <!-- download resume section -->
+            <div class="resume-section">
+                <h2>View my Resume</h2>
+                <a href="{{ url_for('static', filename='assets/my_cv.pdf') }}" target="_blank" class="download-resume">View resume</a>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

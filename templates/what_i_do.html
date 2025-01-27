@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>What I Do</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+         <div class="sidebar">
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                <h2>Atuegbe God'stime Ehischioya</h2>
+            </div>
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}">About Me</a>
+                    <a href="{{ url_for('what_i_do') }}" class="active">What I Do</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="{{ url_for('portfolio') }}">Portfolio</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </ul>
+            </nav>
+            <footer>
+                <p>&copy; 2025 Atuegbe God'stime Ehischioya</p>
+            </footer>
+         </div>
+         <div class="what-i-do">
+            <h1>What I Do</h1>
+            <p class="what-description">I specialize in the dynamic fields of Electrical engineering and Python programming.</p>
+            <ul class="work-list">
+                <li>
+                    <strong>Electrical systems circuitry Design</strong>
+                    <p> * I implore the use of softwares such as Professional 8 proteus software to design basic electric circuit diagrams and schematics for electrical projects. </p>
+                    <p> * I also run simulations on these designs to ensure accurate and 100% efficiency in its working operation. </p>
+                    <p> * Some Designs include: Schematics, block diagram and electrical wiring diagram. </p>
+                </li>
+                <li>
+                    <strong>Power distribution management</strong>
+                    <p> * Experience gotten during my SIWES Intership training at Federal Airport Authority of Nigeria - Port-Harcourt International Airport (FAAN-PHIA). </p>
+                    <p> * I am trained on how to manage power distribution using a Ring main distribution system. </p>
+                    <p> * I am capable of manually operating a Ring Main Unit (RMU) to ensure smooth and efficient power distribution. </p>
+                    <p> * I can connect a ring main unit within a ring system. Such as from a 11kva or 33kva power source to its primary or secondary load substations using feeder pillars,
+                        for efficient power management. </p>
+                </li>
+                <li>
+                    <strong>General Electrical system installation and maintenance</strong>
+                    <p> * I am skilled in replacing and repairing faulty luminaires in residential, commercial, and industrial buildings. </p>
+                    <p> * I have expertise in repairing electrical devices such as electric fans, sockets, and addressing issues with household wiring systems. </p>
+                </li>
+                <li>
+                    <strong>Design and Construction of Electrical Projects</strong>
+                    <p> * I specialize in the design and construction of innovative and technically sound projects. </p>
+                    <p> * I program Arduino boards with C++ to perform various special tasks.</p>
+                </li>
+                <li>
+                    <strong>Web Design and Python Developer</strong>
+                    <p> * My technical expertise spans Python programming, Flask, HTML, CSS. </p>
+                    <p> * I have repositories in GitHub containing codes based on past projects carried out during internships and personally development. </p>
+                </li>
+            </ul>
+            <div class="skill">
+                <h2> My skills </h2>
+                <div class="skill-row">
+                    <div class="skill-name">Web design</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 65%;"></div>
+                    </div>
+                    <div class="skill-percentage">65%</div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-name">Python programming</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                    </div>
+                    <div class="skill-percentage">60%</div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-name">Microsoft packages</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-name">Decision Making</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-name">Team work</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                    </div>
+                    <div class="skill-percentage">90%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
